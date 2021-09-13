@@ -168,7 +168,7 @@ scrap2(review_info, address)
 print(basic_info)
 print(review_info)
 
-#result data
+#result data file
 df1 = pd.DataFrame(basic_info, columns=['point', 'visit_count', 'blog_count'])
 df2 = pd.DataFrame(review_info, columns=['point', 'review', 'date', 'visit','receipt'])
 
