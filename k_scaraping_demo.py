@@ -136,7 +136,6 @@ def extract_review(all_r):
             comment = review.select('.txt_comment > span')  # 리뷰
             rating = review.select('.grade_star > em')  # 별점
             date = review.select("div.comment_info > div > span.time_write")  # 날짜
-            val = ''
             if len(comment) != 0:
                 if len(rating) != 0:
                     comment = comment[0].text
