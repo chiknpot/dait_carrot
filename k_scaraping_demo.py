@@ -11,15 +11,15 @@ import openpyxl
 
 
 options = webdriver.ChromeOptions()
-# 창 안 뜨게하
+# 창 안 뜨게하기
 options.add_argument('headless')
 chromedriver_path = "chromedriver"
-# chromedriver 열
+# chromedriver 열기
 driver = webdriver.Chrome(os.path.join(os.getcwd(), chromedriver_path), options=options)
 
 
 def main():
-    # 렌더링 될때까지 4초 기다리
+    # 렌더링 될때까지 4초 기다리기
     driver.implicitly_wait(4)
     # 주소 가져오기
     driver.get('https://map.kakao.com/')
@@ -27,7 +27,7 @@ def main():
     # 검색할 목록
     place_infos = ['다운타우너 한남', '오아시스 한남점', '리틀넥 한남', '빠레뜨한남 한남', '소브스한남', '베라 한남점', '루트에브리데이한남점',
                        '언더야드', '그랜드하얏트서울 스테이크하우스','아노브 한남']
-    # 저장할 빈 리스트 선
+    # 저장할 빈 리스트 선언
     all_r = []
 
     for i, place in enumerate(place_infos):
