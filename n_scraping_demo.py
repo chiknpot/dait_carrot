@@ -12,7 +12,7 @@ import csv
 from IPython.display import display
 
 
-#맛집scrap
+#basic info
 def scrap(data,page):
     driver = webdriver.Chrome('./chromedriver')
 
@@ -64,7 +64,7 @@ def scrap(data,page):
 
 
 
-#맛집scrap
+#detail review info
 def scrap2(data,page):
     driver = webdriver.Chrome('./chromedriver')
 
