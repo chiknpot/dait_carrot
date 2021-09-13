@@ -159,6 +159,7 @@ basic_info = []
 review_info = []
 
 
+#입력해야하는
 store = '그랜드하얏트서울_스테이크하우스'
 address = "https://map.naver.com/v5/search/%EA%B7%B8%EB%9E%9C%EB%93%9C%ED%95%98%EC%96%8F%ED%8A%B8%20%EC%84%9C%EC%9A%B8%20%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC%ED%95%98%EC%9A%B0%EC%8A%A4%20/place/38576344?c=14136920.2378063,4514264.5328215,15,0,0,0,dh"
 scrap(basic_info,address)
