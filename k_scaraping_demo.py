@@ -139,17 +139,14 @@ def extract_review(all_r):
             val = ''
             if len(comment) != 0:
                 if len(rating) != 0:
-                    val = comment[0].text + '/' + rating[0].text.replace('점', '') + '/' + date[0].text
                     comment = comment[0].text
                     rating = rating[0].text.replace('점', '')
                     date = date[0].text
                 else:
-                    val = comment[0].text + '/0' + '/' + date[0].text
                     comment = comment[0].text
                     rating = 0
                     date = date[0].text
 
-                print(place_name + '/' + val)
                 all_r.append([place_name, date, rating,comment])
 
     else:
