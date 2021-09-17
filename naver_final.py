@@ -264,9 +264,9 @@ store_ID = 10
 for i in store:
     address = "https://map.naver.com/v5/search/" +str(place)+ i + "?c=14137387.2230702,4514264.5328215,15,0,0,0,dh"
     scrap(store_ID,str(i),basic_info,address)
-    #scrap2(store_ID, review_info, address)
+    scrap2(store_ID, review_info, address)
     print(basic_info)
-    #print(review_info)
+    print(review_info)
 
     store_ID += 1
 
