@@ -13,7 +13,7 @@ from IPython.display import display
 
 
 
-#stroe basic info
+#store basic info
 def scrap(store_ID,s_name,data,page):
     driver = webdriver.Chrome('./chromedriver')
 
@@ -262,7 +262,7 @@ review_info = []
 
 store_ID = 10
 for i in store:
-    address = "https://map.naver.com/v5/search/한남동" + i + "?c=14137387.2230702,4514264.5328215,15,0,0,0,dh"
+    address = "https://map.naver.com/v5/search/" + i + "?c=14137387.2230702,4514264.5328215,15,0,0,0,dh"
     scrap(store_ID,str(i),basic_info,address)
     #scrap2(store_ID, review_info, address)
     print(basic_info)
