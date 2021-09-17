@@ -253,12 +253,10 @@ def scrap2(store_ID, data,page):
 
 
 
-
+##################################main 
 
 store = ["베라 한남","한남족발"]
 
-
-#_pcmap_list_scroll_container > ul > li:nth-child(1) > div._3ZU00._1rBq3 > a:nth-child(1) > div > div > span._3Apve
 basic_info = []
 review_info = []
 
