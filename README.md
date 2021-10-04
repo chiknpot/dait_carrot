@@ -2,7 +2,7 @@
 
 
 
-### [pre-processing]pre_tags_category.py
+### [pre-processing]pre_tag_category.py
 - preprocessing code for initializing tags & categories
 
 
